@@ -39,5 +39,17 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
+  <script>
+    $(function() {
+      // Animate
+      function animate(element, animation) {
+        $(element).addClass('animated ' + animation);
+        var wait = setTimeout(function() {
+          $(element).removeClass('animated' + animation);
+        }, 1000);
+      }
+    });
+  </script>
+
 </body>
 </html>
