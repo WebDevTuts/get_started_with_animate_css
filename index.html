@@ -48,6 +48,12 @@
         return false;
       });
 
+      $('#animateBtn2').click(function() {
+        animate('header', 'slideOutUp');
+
+        return false;
+      });
+
       // Animate
       function animate(element, animation) {
         $(element).addClass('animated ' + animation);
